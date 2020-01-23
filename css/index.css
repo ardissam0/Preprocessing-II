@@ -169,23 +169,33 @@ img {
   margin: 0 auto;
 }
 .navbar {
-  margin: 20px 0;
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
   border-bottom: 1px dashed black;
 }
 @media (max-width: 500px) {
   .navbar {
-    flex-direction: column;
-    align-items: center;
     border-bottom: 2px dashed darkgrey;
   }
 }
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .navbar nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .navbar a {
-  text-decoration: none;
-  font-size: 1.7rem;
   color: black;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin-left: 50px;
 }
 .footer {
   width: 100%;
