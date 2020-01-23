@@ -168,35 +168,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-nav {
-  border-bottom: 1px dashed black;
-  padding: 5%;
+.navbar {
+  margin: 20px 0;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px dashed black;
 }
 @media (max-width: 500px) {
-  nav {
+  .navbar {
     flex-direction: column;
     align-items: center;
     border-bottom: 2px dashed darkgrey;
   }
 }
-@media (max-width: 500px) {
-  nav h1 {
-    margin-bottom: 5%;
-  }
-}
-nav .links {
-  display: flex;
-  margin-right: 25%;
-}
-@media (max-width: 500px) {
-  nav .links {
-    margin-right: 50%;
-  }
-}
-nav a {
-  margin-left: 25%;
+.navbar a {
   text-decoration: none;
   font-size: 1.7rem;
   color: black;
@@ -214,6 +200,12 @@ nav a {
 }
 .home header {
   border-bottom: 2px dashed darkgrey;
+}
+@media (max-width: 500px) {
+  .home header {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
 }
 .home header img {
   margin-bottom: 3%;
