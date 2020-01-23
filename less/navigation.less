@@ -7,20 +7,34 @@
         border-bottom: 1px dashed black;
         padding: 5%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        
 
         @media @mobile {
             flex-direction: column;
             align-items: center;
+            border-bottom: 2px dashed darkgrey;
             }
 
         h1 {
-           
+           @media @mobile {
+               margin-bottom: 5%;
+           }
         }
-           
+           .links {
+                display: flex;
+                margin-right: 25%;
+
+                @media @mobile {
+                    margin-right: 50%;
+                }
+                
+           }
         a {
+           margin-left: 25%;
             text-decoration: none;
-            font-size: 1.75rem;
+            font-size: 1.7rem;
             color: black;
+            
         }
     }
